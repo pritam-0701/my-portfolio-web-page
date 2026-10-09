@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travellers - Apka Apna Travel Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-plane-departure"></i> Travellers
+        </div>
+        <nav>
+            <a href="#booking-section"><i class="fa-solid fa-ticket"></i> Bookings</a>
+            <a href="#services"><i class="fa-solid fa-concierge-bell"></i> Services</a>
+            <a href="#packages"><i class="fa-solid fa-umbrella-beach"></i> Packages</a>
+            <a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+        </nav>
+        <button class="login-btn">Login / Signup</button>
+    </header>
+
+    <section class="hero">
+        <h1>Jahan Bhi Jaana Ho, Humare Sath Chalo!</h1>
+        <p>Flights, Trains, Buses, Hotels aur bohot kuch - Ek hi jagah par.</p>
+
+        <div class="booking-container" id="booking-section">
+            <div class="booking-tabs">
+                <button class="tab-btn active" onclick="openTab('flights')"><i class="fa-solid fa-plane"></i> Flights</button>
+                <button class="tab-btn" onclick="openTab('hotels')"><i class="fa-solid fa-hotel"></i> Hotels</button>
+                <button class="tab-btn" onclick="openTab('trains')"><i class="fa-solid fa-train"></i> Trains</button>
+                <button class="tab-btn" onclick="openTab('buses')"><i class="fa-solid fa-bus"></i> Buses</button>
+            </div>
+
+            <div id="flights" class="tab-content active">
+                <form class="booking-form">
+                    <input type="text" placeholder="Kahan se? (From)" required>
+                    <input type="text" placeholder="Kahan tak? (To)" required>
+                    <input type="date" required>
+                    <select>
+                        <option>1 Passenger, Economy</option>
+                        <option>2 Passengers, Economy</option>
+                        <option>Business Class</option>
+                    </select>
+                    <button type="submit" class="search-btn">Search Flights</button>
+                </form>
+            </div>
+
+            <div id="hotels" class="tab-content">
+                <form class="booking-form">
+                    <input type="text" placeholder="City ya Hotel ka Naam" required>
+                    <input type="date" placeholder="Check-in" required>
+                    <input type="date" placeholder="Check-out" required>
+                    <select>
+                        <option>1 Room, 2 Guests</option>
+                        <option>2 Rooms, 4 Guests</option>
+                    </select>
+                    <button type="submit" class="search-btn">Search Hotels</button>
+                </form>
+            </div>
+
+            <div id="trains" class="tab-content">
+                <form class="booking-form">
+                    <input type="text" placeholder="From Station" required>
+                    <input type="text" placeholder="To Station" required>
+                    <input type="date" required>
+                    <select>
+                        <option>All Classes</option>
+                        <option>1A (First AC)</option>
+                        <option>2A (Second AC)</option>
+                        <option>3A (Third AC)</option>
+                        <option>SL (Sleeper)</option>
+                    </select>
+                    <button type="submit" class="search-btn">Search Trains</button>
+                </form>
+            </div>
+
+            <div id="buses" class="tab-content">
+                <form class="booking-form">
+                    <input type="text" placeholder="From City" required>
+                    <input type="text" placeholder="To City" required>
+                    <input type="date" required>
+                    <select>
+                        <option>AC / Non-AC Sleeper</option>
+                        <option>Seater</option>
+                    </select>
+                    <button type="submit" class="search-btn">Search Buses</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Safar Ki Har Zaroorat Ek Jagah</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-car"></i>
+                <h3>Cab / Taxi</h3>
+                <p>Airport drop aur outstation trips ke liye cabs book karen.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Travel Insurance</h3>
+                <p>Bina kisi chinta ke safar karen secure insurance ke sath.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-passport"></i>
+                <h3>Visa Services</h3>
+                <p>Aasan aur fast visa application process.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+                <h3>Forex & Currency</h3>
+                <p>Foreign exchange sabse behtareen rates par.</p>
+            </div>
+        </div>
+    </section>
+    <section style="padding: 40px 20px; max-width: 1000px; margin: 0 auto;">
+    <h2 style="text-align: center; color: #003580; margin-bottom: 25px;">Popular Travel Destinations</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+        
+        <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=400" alt="Goa" style="width:100%; height:140px; object-fit:cover;">
+            <div style="padding: 15px;">
+                <h3>Goa</h3>
+                <p style="color: #666; font-size: 14px;">Flights starting @ ₹2,999</p>
+                <span style="color: #27ae60; font-weight: bold; font-size: 13px;">Hotels from ₹999/night</span>
+            </div>
+        </div>
+
+        <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=400" alt="Jaipur" style="width:100%; height:140px; object-fit:cover;">
+            <div style="padding: 15px;">
+                <h3>Jaipur</h3>
+                <p style="color: #666; font-size: 14px;">Buses starting @ ₹499</p>
+                <span style="color: #27ae60; font-weight: bold; font-size: 13px;">Heritage Stays from ₹1,499</span>
+            </div>
+        </div>
+
+        <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=400" alt="Manali" style="width:100%; height:140px; object-fit:cover;">
+            <div style="padding: 15px;">
+                <h3>Manali</h3>
+                <p style="color: #666; font-size: 14px;">Volvo Buses @ ₹1,199</p>
+                <span style="color: #27ae60; font-weight: bold; font-size: 13px;">Resorts from ₹1,999</span>
+            </div>
+        </div>
+
+        <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=400" alt="Sydney" style="width:100%; height:140px; object-fit:cover;">
+            <div style="padding: 15px;">
+                <h3>Dubai</h3>
+                <p style="color: #666; font-size: 14px;">Flight + Visa Deals</p>
+                <span style="color: #27ae60; font-weight: bold; font-size: 13px;">Packages @ ₹24,999</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2026 Travellers. Sabhi adhikar surakshit hain.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
